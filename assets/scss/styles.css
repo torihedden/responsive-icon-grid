@@ -23,25 +23,50 @@ i {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-section {
+#content {
   width: 90%;
-  margin: 5%; }
-  section div {
-    border: solid 1px #ddd;
+  margin: 5%;
+  margin-bottom: 5%; }
+  #content div {
     float: left;
     width: 33%; }
-    section div:hover {
+    #content div:hover {
+      transition-delay: 0.1s;
       background: #47a3da; }
-      section div:hover i {
+      #content div:hover i {
         color: #fff; }
-      section div:hover .main {
+      #content div:hover .main {
         color: #fff;
         border-top: solid 5px transparent;
         border-bottom: solid 5px #fff; }
-    section div i {
+    #content div i {
       color: #47a3da; }
-    section div .sub {
+    #content div .sub {
       color: #fff; }
+
+#one, #two {
+  border-top: solid 1px transparent;
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  border-left: solid 1px transparent; }
+
+#three {
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px #ddd;
+  border-left: solid 1px transparent; }
+
+#four, #five {
+  border-top: solid 1px transparent;
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent; }
+
+#six {
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  border-left: solid 1px transparent; }
 
 @media screen and (max-width: 1005px) {
   div {
