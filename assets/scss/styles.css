@@ -10,8 +10,8 @@ i {
 
 .main {
   font-size: 1em;
-  border-top: solid 4px #47a3da;
-  border-bottom: solid 4px transparent;
+  border-top: solid 5px #47a3da;
+  border-bottom: solid 5px transparent;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -27,7 +27,6 @@ section {
   width: 90%;
   margin: 5%; }
   section div {
-    background: #fff;
     border: solid 1px #ddd;
     float: left;
     width: 33%; }
@@ -37,11 +36,18 @@ section {
         color: #fff; }
       section div:hover .main {
         color: #fff;
-        border-top: solid 4px transparent;
-        border-bottom: solid 4px #fff; }
+        border-top: solid 5px transparent;
+        border-bottom: solid 5px #fff; }
     section div i {
       color: #47a3da; }
     section div .sub {
       color: #fff; }
+
+@media screen and (max-width: 1005px) {
+  div {
+    width: 49.5%; } }
+@media screen and (max-width: 665px) {
+  div {
+    width: 99%; } }
 
 /*# sourceMappingURL=styles.css.map */
