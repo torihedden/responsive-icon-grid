@@ -1,7 +1,14 @@
-div {
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  color: #47a3da; }
+
+div div {
   background: #fff;
-  border: solid 1px #ddd; }
-  div i {
+  border: solid 1px #ddd;
+  float: left;
+  width: 33%; }
+  div div i {
     color: #47a3da; }
 
 /*# sourceMappingURL=styles.css.map */
