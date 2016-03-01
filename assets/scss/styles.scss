@@ -1,0 +1,112 @@
+$primary-color: #47a3da;
+$alt-color: #fff;
+$gray-border: #ddd;
+$full-width: 99%;
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  color: $primary-color;
+  text-align: center;
+}
+
+i {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.main {
+  font-size: 1em;
+  border-top: solid 5px $primary-color;
+  border-bottom: solid 5px transparent;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sub {
+  font-size: 0.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#content {
+  width: 90%;
+  margin: 5%;
+  margin-bottom: 5%;
+  div {
+    // border: solid 1px $gray-border;
+    float: left;
+    // display: inline-block;
+    width: $full-width / 3;
+
+    &:hover {
+      transition-delay: 0.1s;
+      background: $primary-color;
+      i {
+        color: $alt-color;
+      }
+      .main {
+        color: $alt-color;
+        border-top: solid 5px transparent;
+        border-bottom: solid 5px $alt-color;
+      }
+    }
+    i {
+      color: $primary-color;
+    }
+    .sub {
+      color: $alt-color;
+    }
+  }
+}
+// default display
+//borders will re-draw with media queries
+
+$clear-border: solid 1px transparent;
+$drawn-border: solid 1px $gray-border;
+
+#one, #two {
+  border-top: $clear-border;
+  border-right: $drawn-border;
+  border-bottom: $drawn-border;
+  border-left: $clear-border;
+}
+
+#three {
+  border-top: $clear-border;
+  border-right: $clear-border;
+  border-bottom: $drawn-border;
+  border-left: $clear-border;
+}
+
+#four, #five {
+  border-top: $clear-border;
+  border-right: $drawn-border;
+  border-bottom: $clear-border;
+  border-left: $clear-border;
+}
+
+#six {
+  border-top: $clear-border;
+  border-right: $clear-border;
+  border-bottom: $clear-border;
+  border-left: $clear-border;
+}
+
+$break-small: 665px;
+$break-large: 1005px;
+
+@media screen and (max-width: $break-large){
+  div {
+    width: $full-width/2;
+  }
+}
+
+@media screen and (max-width: $break-small){
+  div {
+    width: $full-width;
+  }
+}
