@@ -1,12 +1,31 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 2em;
-  color: #47a3da; }
+  color: #47a3da;
+  text-align: center; }
+
+i {
+  margin-bottom: 25px;
+  margin-top: 25px; }
+
+.main {
+  font-size: 1em;
+  border-top: solid 4px #47a3da;
+  border-bottom: solid 4px transparent;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.sub {
+  font-size: 0.5em;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 section {
   width: 90%;
-  margin-left: 5%;
-  margin-right: 5%; }
+  margin: 5%; }
   section div {
     background: #fff;
     border: solid 1px #ddd;
@@ -16,9 +35,13 @@ section {
       background: #47a3da; }
       section div:hover i {
         color: #fff; }
-      section div:hover p {
-        color: #fff; }
+      section div:hover .main {
+        color: #fff;
+        border-top: solid 4px transparent;
+        border-bottom: solid 4px #fff; }
     section div i {
       color: #47a3da; }
+    section div .sub {
+      color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
