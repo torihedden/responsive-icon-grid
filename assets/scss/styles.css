@@ -3,12 +3,22 @@ body {
   font-size: 2em;
   color: #47a3da; }
 
-div div {
-  background: #fff;
-  border: solid 1px #ddd;
-  float: left;
-  width: 33%; }
-  div div i {
-    color: #47a3da; }
+section {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+  section div {
+    background: #fff;
+    border: solid 1px #ddd;
+    float: left;
+    width: 33%; }
+    section div:hover {
+      background: #47a3da; }
+      section div:hover i {
+        color: #fff; }
+      section div:hover p {
+        color: #fff; }
+    section div i {
+      color: #47a3da; }
 
 /*# sourceMappingURL=styles.css.map */
