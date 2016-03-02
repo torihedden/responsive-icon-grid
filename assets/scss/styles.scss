@@ -36,17 +36,18 @@ i {
   width: 90%;
   margin: 5%;
   margin-bottom: 5%;
-  div {
+  .box {
     // border: solid 1px $gray-border;
     float: left;
     // display: inline-block;
     width: $full-width / 3;
 
     &:hover {
-      transition-delay: 0.1s;
       background: $primary-color;
       i {
         color: $alt-color;
+        // transition-delay: 0.2s;
+        // transform: translateY(5px);
       }
       .main {
         color: $alt-color;
@@ -99,14 +100,17 @@ $drawn-border: solid 1px $gray-border;
 $break-small: 665px;
 $break-large: 1005px;
 
-@media screen and (max-width: $break-large){
-  div {
-    width: $full-width/2;
+// unsure why need to wrap inside #content but it works
+#content {
+  @media (max-width: $break-large){
+    .box {
+      width: $full-width/2;
+    }
   }
-}
 
-@media screen and (max-width: $break-small){
-  div {
-    width: $full-width;
+  @media (max-width: $break-small){
+    .box {
+      width: $full-width;
+    }
   }
 }

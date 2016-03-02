@@ -27,21 +27,20 @@ i {
   width: 90%;
   margin: 5%;
   margin-bottom: 5%; }
-  #content div {
+  #content .box {
     float: left;
     width: 33%; }
-    #content div:hover {
-      transition-delay: 0.1s;
+    #content .box:hover {
       background: #47a3da; }
-      #content div:hover i {
+      #content .box:hover i {
         color: #fff; }
-      #content div:hover .main {
+      #content .box:hover .main {
         color: #fff;
         border-top: solid 5px transparent;
         border-bottom: solid 5px #fff; }
-    #content div i {
+    #content .box i {
       color: #47a3da; }
-    #content div .sub {
+    #content .box .sub {
       color: #fff; }
 
 #one, #two {
@@ -68,11 +67,11 @@ i {
   border-bottom: solid 1px transparent;
   border-left: solid 1px transparent; }
 
-@media screen and (max-width: 1005px) {
-  div {
+@media (max-width: 1005px) {
+  #content .box {
     width: 49.5%; } }
-@media screen and (max-width: 665px) {
-  div {
+@media (max-width: 665px) {
+  #content .box {
     width: 99%; } }
 
 /*# sourceMappingURL=styles.css.map */
