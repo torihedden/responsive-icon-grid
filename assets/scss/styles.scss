@@ -19,17 +19,21 @@ i {
   font-size: 1em;
   border-top: solid 5px $primary-color;
   border-bottom: solid 5px transparent;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .sub {
   font-size: 0.5em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-sizing: border-box;
 }
 
 #content {
@@ -106,11 +110,45 @@ $break-large: 1005px;
     .box {
       width: $full-width/2;
     }
+    #one, #three {
+      border-top: $clear-border;
+      border-right: $drawn-border;
+      border-bottom: $drawn-border;
+      border-left: $clear-border;
+    }
+
+    #two, #four {
+      border-top: $clear-border;
+      border-right: $clear-border;
+      border-bottom: $drawn-border;
+      border-left: $clear-border;
+    }
+
+    #five {
+      border-top: $clear-border;
+      border-right: $drawn-border;
+      border-bottom: $clear-border;
+      border-left: $clear-border;
+    }
+
+    #six {
+      border-top: $clear-border;
+      border-right: $clear-border;
+      border-bottom: $clear-border;
+      border-left: $clear-border;
+    }
   }
 
   @media (max-width: $break-small){
     .box {
       width: $full-width;
+    }
+    // this looks redundant but targeting .box didn't work
+    #one, #two, #three, #four, #five, #six {
+      border-top: $clear-border;
+      border-right: $clear-border;
+      border-bottom: $drawn-border;
+      border-left: $clear-border;
     }
   }
 }
